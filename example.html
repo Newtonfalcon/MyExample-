@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>football scores</title>
+</head>
+<body id="main">
+    <style>
+        body {background: violet;
+        font-size: 20px;}
+        
+        ul {
+           text-size:30px;
+          
+        }
+        li {
+            margin-top:4%;
+        }
+        
+            
+       
+        button{
+            margin-top:8%;
+           background-color:black;
+           background:white;
+           cursor:pointer;
+        }
+    </style>
+    
+    
+    <div id="main">
+        <button id="white">change to white</button>
+        <button id="red"> change to red</button>
+        <button id="blue">change to blue</button>
+        <h2 id="head">check football scores</h2>
+        <ul>
+           <li>Chelsea vs Liverpool<span id="score1"> : </span></li>
+           <li>
+               Man city vs Burnley<span id="score2"> :</span>
+               
+               
+           </li>
+           
+           <li>
+              others <span id="score3"> :</span>
+           </li>
+           <button id="btn">Check Scores</button>
+        </ul>
+    </div>
+    
+    <script>
+       
+     const main = document.getElementById('main')
+     
+     const white = document.getElementById('white')
+     
+     const red = document.getElementById('red')
+     
+     const blue = document.getElementById('blue')
+     
+     
+     
+     const head = document.getElementById('head')
+        
+   const  score1 =  document.getElementById('score1'); 
+        
+       const  score2 =  document.getElementById('score2'); 
+        
+     const   score3 = document.getElementById('score3')
+         
+     const     btn =  document.getElementById('btn'); 
+     
+     
+     white.addEventListener('click', ()=>{
+         main.style.backgroundColor='white'
+     })
+     
+      red.addEventListener('click', ()=>{
+         main.style.backgroundColor='red'
+     })
+     
+     
+      blue.addEventListener('click', ()=>{
+         main.style.backgroundColor='blue'
+     })
+     
+          
+          btn.addEventListener('click', ()=> {
+             head.innerHTML="here are the scores"
+              score1.textContent= '_1:1'
+              score2.textContent= '_3:0'
+              score3.textContent= '_ man united will be playing today'
+              score3.style.fontSize = '15px'
+          })
+        
+        
+        
+    </script>
+</body>
+</html>
